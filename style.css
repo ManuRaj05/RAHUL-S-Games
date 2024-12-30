@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #222;
+  font-family: sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: white;
+}
+
+.game-area {
+    position: relative;
+    width: 90%; /* Use percentage for width */
+     max-width: 400px;
+    height: 600px;
+    background-color: #333;
+    overflow: hidden;
+    border: 4px solid #ccc;
+}
+@media (max-width: 500px) {
+    .game-area{
+      height: 80vh
+    }
+}
+
+.dragan {
+  position: absolute;
+  bottom: 2%; /* percentage */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15%; /* percentage */
+  height: auto;
+   padding-bottom: 7%;
+  background-color: lightgreen;
+  border-radius: 50% 50% 0 0;
+  cursor: move;
+  transition: background-color 0.3s ease;
+}
+
+.fireball {
+    position: absolute;
+    width: 10%; /* percentage */
+    height: auto;
+    padding-bottom: 10%;
+    background-color: red;
+    border-radius: 50%;
+}
+
+
+.score,
+.lives,
+.level,
+.target {
+    position: absolute;
+    top: 10px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.score {
+    left: 2%; /* percentage */
+}
+
+.level {
+    left: 25%; /* percentage */
+}
+.target{
+    right:25%;
+}
+.high-score {
+  position: absolute;
+  bottom: 2%; /* percentage */
+  left: 50%;
+  transform: translateX(-50%);
+  color: yellow;
+  font-size: 1rem;
+  display: block;
+}
+
+.lives {
+    right: 2%; /* percentage */
+}
+
+.controls {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.controls button {
+    margin: 0 2px;
+    padding: 5px 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  display: none;
+  text-align: center;
+}
+#game-over-text {
+  font-size: 1.5rem;
+}
+
+.timer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+.level-timer{
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+     color: white;
+    font-weight: bold;
+}
+
+.start-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.start-button:hover {
+  background-color: #0056b3;
+}
+.level-complete {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: green;
+    font-weight: bold;
+    display: none;
+    text-align: center;
+}
+@media (max-width: 400px) {
+    .score,
+    .lives,
+    .level,
+    .target{
+        font-size: 0.8rem;
+    }
+     .high-score{
+        font-size: 0.8rem;
+    }
+    .timer{
+        font-size: 1.5rem;
+    }
+     .level-timer{
+        font-size: 0.8rem;
+    }
+    .game-over{
+     font-size: 1rem;
+    }
+     #game-over-text {
+        font-size: 1.2rem;
+    }
+    .start-button {
+        font-size: 0.9rem;
+        padding: 5px 10px;
+    }
+    .controls button{
+        margin: 0 1px;
+        padding: 4px 6px;
+        font-size: 0.7rem;
+    }
+
+     .level-complete{
+         font-size: 1.2rem;
+     }
+     .dragan{
+         width: 18%;
+          padding-bottom: 10%;
+     }
+       .fireball{
+         width: 12%;
+           padding-bottom: 12%;
+
+     }
+
+}
