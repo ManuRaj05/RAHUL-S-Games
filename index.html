@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch the Fireball</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-area">
+
+        <div class="dragan" id="dragan">
+        </div>
+        <div class="score">Score: <span id="score-value">0</span></div>
+        <div class="lives">Lives: <span id="lives-value">8</span></div>
+        <div class="level">Level: <span id="level-value">1</span></div>
+          <div class = "target">Target: <span id ="target-value"> 0</span></div>
+        <div class="timer" id="timer"></div>
+         <div class="level-timer" id = "level-timer"> </div>
+        <div class="start-button" id="start-button">Start Game</div>
+
+
+        <div class="controls">
+            <button id="play-button" style="display: none;">Play</button>
+            <button id="pause-button" style="display: none;">Pause</button>
+            <button id="resume-button" style="display: none;">Resume</button>
+        </div>
+          <div class="high-score" id="high-score" >Highest Score:<span id ="highest-score-value"> 0 </span></div>
+
+        <div class="game-over" id="game-over" style="display: none;">
+            <div id="game-over-text">Game Over</div>
+            <div>Score: <span id="final-score">0</span></div>
+            <div>Time: <span id="final-time">0</span> seconds</div>
+        </div>
+
+       <div class = "level-complete" id ="level-complete" style = "display:none"> Level Complete!</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
